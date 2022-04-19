@@ -4,7 +4,7 @@ In order to run the program use the following instructions:
 
 $ gcc main.cpp -lstdc++
 
-$ ./main
+$ ./a.out
 
 
 Note when building: In order to change the number of processess change both the variable numP located on line 11 and variable processes[] located on line 109. 
