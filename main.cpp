@@ -50,29 +50,29 @@ bool checkSafeState(int processes[], int available[], int maxR[][numR], int allo
   
   // While all processes have not finished or the system is not in the safe state.
   int count = 0;
-  while (count < numP)
+  while(count < numP)
   {
     // Finds a process which is not finished yet and whose needed resources can be satisfied with current copied resources.
     bool truth = false;
-    for (int p = 0; p < numP; p++)
+    for(int p = 0; p < numP; p++)
     {
       // Checks to see if a process is finished, if not then it continues
-      if (finished[p] == 0)
+      if(finished[p] == 0)
       {
         // Checks if for all resources of the current process, if needed resources is less than copy
         int j;
-        for (j = 0; j < numR; j++)
+        for(j = 0; j < numR; j++)
         {
-          if (needed[p][j] > copyR[j])
+          if(needed[p][j] > copyR[j])
           {
             break;
           }
         }
         // If all needs of the process were satisfied.
-        if (j == numR)
+        if(j == numR)
         {
           // Add the allocated resources of current process to the available resources and free the resources afterward
-          for (int k = 0 ; k < numR ; k++)
+          for(int k = 0 ; k < numR ; k++)
           {
             copyR[k] += allotted[p][k];
           }
@@ -86,7 +86,7 @@ bool checkSafeState(int processes[], int available[], int maxR[][numR], int allo
       }
     }
     // If we could not find a next process in safe sequence.
-    if (truth == false)
+    if(truth == false)
     {
       cout << "System is not in safe state";
       return false;
@@ -95,7 +95,7 @@ bool checkSafeState(int processes[], int available[], int maxR[][numR], int allo
   // If system is in safe state then safe sequence will be as below
   cout << "System is in safe state.\nSafe"
          " sequence is: ";
-  for (int i = 0; i < numP ; i++)
+  for(int i = 0; i < numP ; i++)
   {
     cout << safeSequence[i] << " ";
   }
