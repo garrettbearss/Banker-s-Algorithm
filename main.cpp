@@ -3,7 +3,7 @@
 // Date: 4/19/2022
 // main.cpp
 // To run use gcc main.cpp -lstdc++
-// then ./main
+// then ./a.out
 #include<iostream>
 using namespace std;
   
