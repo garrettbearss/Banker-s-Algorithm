@@ -68,10 +68,10 @@ bool checkSafeState(int processes[], int available[], int maxR[][numR], int allo
             break;
           }
         }
-        // If all needs of p were satisfied.
+        // If all needs of the process were satisfied.
         if (j == numR)
         {
-          // Add the allocated resources of current P to the available/work resources i.e.free the resources
+          // Add the allocated resources of current process to the available resources and free the resources afterward
           for (int k = 0 ; k < numR ; k++)
           {
             copyR[k] += allotted[p][k];
@@ -79,7 +79,7 @@ bool checkSafeState(int processes[], int available[], int maxR[][numR], int allo
           // Add this process to safe sequence.
           safeSequence[count++] = p;
   
-          // Mark this p as finished
+          // Mark the current process as finished
           finished[p] = 1;
           truth = true;
         }
