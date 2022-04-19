@@ -1,6 +1,6 @@
-// Github Link:
+// Github Link: https://github.com/garrettbearss/Banker-s-Algorithm/edit/main/main.cpp
 // Author: Garrett Bearss
-// Date: 4/ /2022
+// Date: 4/19/2022
 // main.cpp
 // To run use gcc main.cpp -lstdc++
 // then ./main
