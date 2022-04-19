@@ -53,7 +53,7 @@ bool checkSafeState(int processes[], int available[], int maxR[][numR], int allo
   while (count < numP)
   {
     // Finds a process which is not finished yet and whose needed resources can be satisfied with current copied resources.
-    bool found = false;
+    bool truth = false;
     for (int p = 0; p < numP; p++)
     {
       // Checks to see if a process is finished, if not then it continues
@@ -81,12 +81,12 @@ bool checkSafeState(int processes[], int available[], int maxR[][numR], int allo
   
           // Mark this p as finished
           finished[p] = 1;
-          found = true;
+          truth = true;
         }
       }
     }
     // If we could not find a next process in safe sequence.
-    if (found == false)
+    if (truth == false)
     {
       cout << "System is not in safe state";
       return false;
