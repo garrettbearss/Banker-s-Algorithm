@@ -51,5 +51,7 @@ What input file should look like:
 0 0 2,4 3 3,
 
 Example of output:
+
 System is in safe state
+
 Safe sequence is: 1 3 4 0 2
