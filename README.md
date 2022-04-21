@@ -11,26 +11,43 @@ Note when building: In order to change any of the vaiable look at the input.csv 
 Allocated Resource Matrix:
 
 0 1 0
+
 2 0 0
+
 3 0 2
+
 2 1 1
+
 0 0 2
 
+
 Max Resource Matrix:
+
 7 5 3
+
 3 2 2
+
 9 0 2
+
 2 2 2
+
 4 3 3
 
+
 Avaiable Resource Matrix: 
+
 3 3 2
 
 What input file should look like:
+
 0 1 0,7 5 3,3 3 2
+
 2 0 0,3 2 2,
+
 3 0 2,9 0 2,
+
 2 1 1,2 2 2,
+
 0 0 2,4 3 3,
 
 Example of output:
