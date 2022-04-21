@@ -4,7 +4,7 @@
 // main.cpp
 // To run use the following commands:
 // $ g++ main.cpp -o main
-// ./main
+// $ ./main
 #include<iostream>
 #include<vector>
 #include<iostream>
